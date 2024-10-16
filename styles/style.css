@@ -10,7 +10,7 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../images/background-section1.jpg)
+    background-color: #FFF8EC;
 }
 
 #fixed-whatsapp-btn #img-whatsapp{
@@ -32,9 +32,6 @@ html, body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    background-image:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 100%),
-        url('../images/background-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +45,7 @@ html, body{
     font-family: inter;
     font-size: 50px;
     font-weight: 400;
-    color: rgba(32,97,125,255)
+    color: #2A6C3B;
 }
 
 .header .ocupacao{
@@ -58,7 +55,7 @@ html, body{
     font-family: roboto;
     font-size: 50px;
     font-weight: 350;
-    color: rgba(32,97,125,255)
+    color: #2A6C3B;
 }
 
 .header .header-titulo{
@@ -68,7 +65,7 @@ html, body{
     font-family: "playfair-display";
     font-size: 60px;
     font-weight: 600;
-    color: rgba(32,97,125,255);
+    color: #2A6C3B;
 }
 
 .header .header-titulo#primeiro{
@@ -81,7 +78,7 @@ html, body{
     justify-content: flex-start;
     font-family: roboto;
     font-size: 30px;
-    color: rgba(32,97,125,255)
+    color: #2A6C3B;
 }
 
 .header .header-contato-btn{
@@ -95,8 +92,8 @@ html, body{
     font-size: 20px;
     padding: 20px 20px;
     border-radius: 15px;
-    color: white;
-    background: #25D366;
+    color: #FFF8EC;
+    background: #B88079;
     animation: pulse 1.5s infinite;
 }
 
@@ -131,19 +128,13 @@ html, body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    /* background-image: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 100%),    
-        url('../images/background-section1.jpg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     font-family: roboto;
 }
 
 .section-1 h2{
     display: flex;
     justify-content: center;
-    color: rgba(32,97,125,255);
+    color: #2A6C3B;
     font-style: roboto;
     font-size: 40px;
 }
@@ -159,9 +150,9 @@ html, body{
 }
 
 .section-1 .beneficios .card{
-    background: rgba(32,97,125,255);
+    background: #2A6C3B;
     width: calc(25% - 20px);
-    height: 300px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,16 +181,13 @@ html, body{
     background-image: url(../images/ar-livre.jpg);
 }
 
-.section-1 .beneficios .card#alta-performance::before{
-    background-image: url(../images/corrida-ar-livre.jpg);
+.section-1 .beneficios .card#reeducação::before{
+    background-image: url(../images/reeducação-prato.jpg);
 }
 
 .section-1 .beneficios .card#prevenção-doença::before{
     background-image: url(../images/prevencao-doença.png);
 }
-
-
-
 
 .section-1 .beneficios .card h3,
 .section-1 .beneficios .card p{
@@ -213,7 +201,7 @@ html, body{
  
 
 .section-1 .beneficios .card h3{
-    color: white;
+    color: #FFF8EC;
     font-size: 20px;
 }
 
@@ -226,10 +214,10 @@ html, body{
 
 .section-1 .beneficios .card:hover{
     scale: 1.1;
-    border: 1px solid rgba(32,97,125,255);
-    background-color: white;
+    border: 1px solid #2A6C3B;
+    background-color: #B88079;
     h3, p{
-        color: rgba(32,97,125,255);
+        color: #FFF8EC;
     }
 }
 
@@ -238,7 +226,7 @@ html, body{
 /* Inicio section-2 */
 
 #titulo-especialidades{
-    color: rgba(32,97,125,255);
+    color: #2A6C3B;
     font-family: roboto;
     font-size: 40px;
     text-align: center;
@@ -247,8 +235,7 @@ html, body{
 .section-2{
     width: 100%;
     height: 500px;
-    margin-top: 30px;
-    /* background-image: url('../images/background-section1.jpg'); */
+    margin-top: 110px;
     font-family: roboto;
 }
 
@@ -272,17 +259,15 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(32,97,125,255);
     border-radius: 15px;
     padding: 20px;
-    background-color: white;
-    color: rgba(32,97,125,255);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #B88079;
+    color: #FFF8EC;
 }
 
 .section-2 .atuacao .card:hover{
     scale: 1.1;
-    background-color: rgba(32,97,125,255);
+    background-color: #2A6C3B;
     color: white;
 }
 
@@ -297,13 +282,14 @@ html, body{
 
 .section-2 .atuacao .card p{
     font-size: 15px;
+    text-align: justify;
 }
 
 /* Inicio section-3 */ 
 
 #titulo-sobre{
     text-align: center;
-    color: rgba(32,97,125,255);
+    color: #2A6C3B;
     font-family: roboto;
     font-size: 40px;
 }
@@ -326,12 +312,13 @@ html, body{
     align-items: center;
     border: 1px solid rgba(32,97,125,255);
     border-radius: 15px;
+    background-color: #B88079;
     margin-left: 5%;
     text-align: justify;
 }
 
 .section-3 .sobre h3{
-    color: rgba(32,97,125,255);
+    color: #FFF8EC;
     font-size: 20px;
     text-align: center;
 }
@@ -347,7 +334,7 @@ html, body{
 
 .section-3 .sobre #texto p{
     font-size: 17px;
-    color: rgba(32,97,125,255);
+    color: #FFF8EC;
 }
 
 .section-3 .local-atuacao{
@@ -356,14 +343,14 @@ html, body{
     padding: 20px;
     margin-right: 5%;
     border-radius: 15px;
-    background-color: rgba(32,97,125,255);
+    background-color: #2A6C3B;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .section-3 .local-atuacao h3{
-    color: white;
+    color: #FFF8EC;
     font-size: 20px;
     text-align: center;
 }
@@ -408,9 +395,8 @@ html, body{
     width: 100%;
     height: 100px;
     margin-top: 100px;
-    background: rgba(32,97,125,255);
-    border-top: 1px solid rgba(32,97,125,255);
-    color: white;
+    background-image: linear-gradient(to bottom, #FFF8EC, #B88079);
+    color: #2A6C3B;
     display: flex;
     justify-content: center;
     align-items: center;
