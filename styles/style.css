@@ -32,13 +32,14 @@ html, body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+.header .logo{
+    width: 500px;
+    margin: 0px 0px 0px 10%;
+}
 
-.header .nome{
+/* .header .nome{
     margin: 0px 0px 0px 10%;
     display: flex;
     justify-content: flex-start;
@@ -47,6 +48,10 @@ html, body{
     font-weight: 400;
     color: #2A6C3B;
 }
+
+.header .nome img{
+    height: 150px;
+} */
 
 .header .ocupacao{
     margin: 0px 0px 0px 10%;
@@ -116,6 +121,8 @@ html, body{
     margin: 0px 10% 0px 0px;
     display: flex;
     justify-content: flex-end;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* Final Header */
@@ -310,7 +317,7 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(32,97,125,255);
+    border: 1px solid #2A6C3B;
     border-radius: 15px;
     background-color: #B88079;
     margin-left: 5%;
@@ -325,11 +332,17 @@ html, body{
 
 .section-3 .sobre #texto{
     border-radius: 15px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
 }
 
 .section-3 .sobre #texto img{
     float: left;
-    width: 350px;
+    /* width: 350px; */
+    height: 350px;
+    border-radius: 15px;
+    padding-right: 15px;
 }
 
 .section-3 .sobre #texto p{
