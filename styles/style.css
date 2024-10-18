@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -25,16 +25,6 @@ html, body{
 .header .logo{
     width: 500px;
     margin: 0px 0px 0px 10%;
-}
-
-.header .ocupacao{
-    margin: 0px 0px 0px 10%;
-    display: flex;
-    justify-content: flex-start;
-    font-family: roboto;
-    font-size: 50px;
-    font-weight: 350;
-    color: #2A6C3B;
 }
 
 .header .header-titulo{
@@ -76,16 +66,16 @@ html, body{
     animation: pulse 1.5s infinite;
 }
 
-@keyframes pulse {
-    0% {
+@keyframes pulse{
+    0%{
         transform: scale(1);
         box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
     }
-    50% {
+    50%{
         transform: scale(1.1);
         box-shadow: 0 0 25px rgba(110, 110, 110, 0.5);
     }
-    100% {
+    100%{
         transform: scale(1);
         box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
     }
@@ -200,6 +190,10 @@ html, body{
     h3, p{
         color: #FFF8EC;
     }
+}
+
+.buttons{
+    display: none;
 }
 
 /* Final section-1 */
@@ -337,16 +331,16 @@ html, body{
     animation: pulse 1.5s infinite;
 }
 
-@keyframes pulse {
-    0% {
+@keyframes pulse{
+    0%{
         transform: scale(1);
         box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
     }
-    50% {
+    50%{
         transform: scale(1.1);
         box-shadow: 0 0 25px rgba(110, 110, 110, 0.5);
     }
-    100% {
+    100%{
         transform: scale(1);
         box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
     }
@@ -427,7 +421,7 @@ html, body{
     width: 100%;
     height: 100px;
     margin-top: 30px;
-    background-image: linear-gradient(to bottom, #FFF8EC, #B88079);
+    background-image: linear-gradient(to bottom, #FFF8EC, #b38f8a);
     color: #2A6C3B;
     display: flex;
     justify-content: center;
@@ -442,4 +436,231 @@ html, body{
 
 .footer #dev a{
     text-decoration: none;
+}
+
+@media only screen and (min-width: 2400px){
+    html, body{
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        width: 99vw;
+    }
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px){
+    /* Ajustes gerais para dispositivos móveis */
+    html, body{
+        width: 100%;
+        padding: 0;
+    }
+
+    .header{
+        height: auto;
+        text-align: center;
+    }
+
+    .header .logo{
+        width: 80%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header-titulo{
+        margin: 0px 0px 0px 0px;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header-titulo#primeiro{
+        margin: 10px 0px 0px 0px;
+    }
+
+    .header .header-div{
+        font-size: 22px;
+        margin: 15px 0px 0px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header-contato-btn{
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .header-contato-btn a{
+        margin: 0px 0px 0px 0px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header .div-imagem-frontal{
+        margin: 15px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    .header .div-imagem-frontal img{
+        width: 60%;
+    }
+
+    .section-1{
+        height: auto;
+        text-align: center;
+        justify-content: start;
+        font-size: 25px;
+    }
+
+    .section-1 h2{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .section-1 .beneficios .card{
+        display: none;
+        height: 110%;
+    }
+
+   .section-1 .beneficios .card.active{
+        display: block;
+        width: 90%;
+        min-height: 400px;
+    }
+
+    .section-1 .beneficios .card.active:hover{
+        scale: 1;
+        background-color: #2A6C3B;
+        border: none;
+        h3, p{
+            color: #FFF8EC;
+        }
+    }
+
+    .section-1 .beneficios .buttons{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            border: none;
+            background-color: transparent;
+        }
+
+        img{
+            width: 20px;   
+        }
+    }
+
+    .section-2{
+        height: auto;
+        text-align: center;
+        justify-content: start;
+        font-size: 25px;
+        margin-top: 180px;
+    }
+
+    .section-2 h2{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .section-2 .elementos-flex .atuacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-2 .elementos-flex .atuacao .card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .section-2 .elementos-flex .atuacao .card:hover{
+        scale: 1;
+        background-color: #B88079;
+        color: white;
+    }
+
+    #titulo-sobre{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .section-3{
+        height: auto;
+    }
+
+    .section-3 .sobre{
+        width: 80%;
+        min-height: 500px;
+    }
+
+    .section-3 .sobre #texto img{
+        display: none;
+    }
+
+    .section-3 .sobre #texto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #agendamento-presencial{
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .section-4{
+        height: auto;
+        gap: 15px;
+    }
+
+    .section-4 .local-atuacao{
+        width: 80%;
+    }
+
+    .section-4 .local-atuacao .agendamento{
+        text-align: center;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100px;
+        margin-top: 0px;
+        font-size: 15px;
+        text-align: center;
+        border: none;
+        align-items: end;
+    }
+
+    .footer .texto{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
 }
