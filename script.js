@@ -16,19 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Função para ir para o próximo card
+    // Função para ir para o próximo card com comportamento circular
     document.getElementById("next-btn").addEventListener("click", function () {
         if (currentIndex < cards.length - 1) {
             currentIndex++;
-            updateCardDisplay();
+        } else {
+            currentIndex = 0; // Volta para o primeiro card se estiver no último
         }
+        updateCardDisplay();
     });
 
-    // Função para ir para o card anterior
+    // Função para ir para o card anterior com comportamento circular
     document.getElementById("prev-btn").addEventListener("click", function () {
         if (currentIndex > 0) {
             currentIndex--;
-            updateCardDisplay();
+        } else {
+            currentIndex = cards.length - 1; // Vai para o último card se estiver no primeiro
         }
+        updateCardDisplay();
     });
 });
